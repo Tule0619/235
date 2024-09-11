@@ -28,6 +28,7 @@
         div
         {
             background-color: rgb(110, 171, 224);
+            padding: 10px;
         }
         div p
         {
@@ -67,10 +68,16 @@
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, maxime.
         </p>
-        <marquee behavior="alternate" direction="down">
-            Marqee Test
-            <p>P in Marquee In Div Test</p>
-        </marquee>
+        <div>
+            <marquee behavior="alternate" direction="right">
+                <div>
+                    <marquee behavior="alternate" direction="down">
+                        Marqee Test
+                        <p>P in Marquee In Div Test</p>
+                    </marquee>
+                </div>
+            </marquee>
+        </div>
     </div>
 </body>
 
