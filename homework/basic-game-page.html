@@ -1,36 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Legend of Zelda Skyward Sword Game Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+
     <style>
-        :root
-        {
-            font-family: "Comic Sans MS", cursive, sans-serif, fantasy;
-            color: white;
+        :root {
+            font-family: "Comic Sans MS", sans-serif, fantasy;
+            color: #eee;
         }
-        h1
+
+        main
         {
+            background-color: #112;
+            border: 5px solid #888;
+            border-radius: 5;
+            margin: 0em auto;
+            padding: 2em;
+        }
+
+        p,
+        a,
+        ul,
+        ol,
+        dl,
+        img,
+        blockquote {
+            margin: 2em;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: "Tiny5", sans-serif, serif;
+            font-weight: 400;
+            font-style: normal;
             text-align: center;
-            color: red;
+        }
+
+        h1 {
+            color: #c33;
             font-size: 3em;
         }
-        body
+
+        h2 {
+            color: #db0;
+            font-size: 2em;
+        }
+
+        body {
+            background-color: #111;
+            margin: 1in;
+        }
+
+        hr {
+            border-color: 5 solid #888;
+        }
+
+        img {
+            width: 32em;
+            height: 18em;
+        }
+
+        a:link {
+            color: #eee;
+        }
+
+        a:visited {
+            color: #c33;
+        }
+
+        a:hover {
+            color: #db0;
+        }
+
+        a:focus
         {
-            background-color: black;
+            color: 1px #116;
+        }
+
+        a:active {
+            color: #b90;
+        }
+
+        .border {
+            border: .5em solid #888;
+            border-radius: 2.5%;
+            background-color: #222;
+        }
+
+        .imageSection {
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
     <h1>The Legend of Zelda: Skyward Sword</h1>
     <hr>
-    <ul>
-        <li>Published by: Nintendo Co., Ltd.</li>
-        <li>Developed by: <abbr title="Nintendo Entertainment Analysis & Development">Nintendo EAD</abbr></li>
-        <li>Wii Release: 2011</li>
-        <li>Wii U Release: 2016</li>
-        <li>Nintendo Switch: 2021</li>
-    </ul>
+    <header>
+        <h2>Publishing Info</h2>
+        <ul>
+            <li>Published by: Nintendo Co., Ltd.</li>
+            <li>Developed by: <abbr title="Nintendo Entertainment Analysis & Development">Nintendo EAD</abbr></li>
+            <li>Wii Release: 2011</li>
+            <li>Wii U Release: 2016</li>
+            <li>Nintendo Switch: 2021</li>
+        </ul>
+    </header>
+    <main>
+        <h2>Description</h2>
+        <p>
+            <i>The Legend of Zelda: Skyward Sword</i> once again places the player in control of Link, a Hylian boy who
+            this time around lives in the floating nation of Skyloft. Link is in love with a local girl called Zelda but
+            one day while flying on their bird mounts, a tornado shows up out of nothing and takes Zelda away from Link.
+            After that Link teams up with Fi, a spirit living within a sword and he descends to the long-forgotten
+            surface to search for Zelda.
+        </p>
+        <hr>
+        <h2>Images</h2>
+        <div class="imageSection">
+            <img class="border" src="10530490-the-legend-of-zelda-skyward-sword-screenshot.jpg"
+                alt="Flight upon a loftwing">
+            <img class="border" src="10530493-the-legend-of-zelda-skyward-sword-screenshot.jpg"
+                alt="Link falling to the surface">
+        </div>
+        <hr>
+        <h2>Game Categories</h2>
+        <ul>
+            <li>Genre: Action</li>
+            <li>Players: 1</li>
+            <li>Perspective: 1st-Person Behind view</li>
+            <li>Visual: Free camera</li>
+            <li>Gameplay: Metroidvania Puzzle elements</li>
+        </ul>
+        <hr>
+        <h2>Quote</h2>
+        <blockquote cite="https://www.mobygames.com/game/53708/the-legend-of-zelda-skyward-sword/user-review/2291944/">
+            Skyward Sword is meant as a prequel to the series, detailing the origins of several of the series’ more
+            iconic elements, while pushing the series’ control and gameplay design template forward. But while this may
+            be a prequel, it is actually the most advanced and complex game in the series to date.
+        </blockquote>
+    </main>
+    <footer>
+        <h2><i>Sources</i></h2>
+        <div>
+            <a href="https://www.mobygames.com/game/53708/the-legend-of-zelda-skyward-sword/">
+            Mobygames, The Legend of Zelda: Skyward Sword
+            </a>
+        </div>
+        <div>
+            <a href="https://www.mobygames.com/game/53708/the-legend-of-zelda-skyward-sword/user-review/2291944/">
+                Mobygames, User review, The Legend of Zelda: Skyward Sword, "The greatest Zelda game ever Made"
+            </a>
+        </div>
+    </footer>
+
 </body>
+
 </html>
