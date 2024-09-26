@@ -1,5 +1,6 @@
 body {
     background-color: #223;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h1{
     color: #79c;
@@ -21,6 +22,9 @@ p {
 div {
     padding: .5em;
     margin: auto;
+}
+hr {
+    border: 1px solid #44a;
 }
 img {
     height: 100%;

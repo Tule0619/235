@@ -1,5 +1,6 @@
 body {
     background-color: #dbb;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 h1{
     color: #c59;
@@ -21,6 +22,9 @@ p {
 div {
     padding: .5em;
     margin: auto;
+}
+hr {
+    border: 1px solid #412;
 }
 img {
     height: 100%;
