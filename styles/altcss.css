@@ -1,0 +1,79 @@
+body {
+    background-color: #dbb;
+}
+h1{
+    color: #c59;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+h2, h3 {
+    color: #a44;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p {
+    margin: .5em;
+    padding: .5em;
+    border: .25em solid #633;
+    background-color: #a79;
+    color: #412;
+}
+div {
+    padding: .5em;
+    margin: auto;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.item-a {
+    grid-area: mainheader;
+}
+.item-b {
+    grid-area: subheader;
+}
+.item-c {
+    grid-area: selfie;
+}
+.item-d {
+    grid-area: aboutme;
+}
+.item-e {
+    grid-area: myexperience;
+}
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "subheader mainheader"
+    "selfie aboutme"
+    "selfie myexperience";
+}
+li {
+    color: #633;
+}
+#linkcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    gap: 3em;
+}
+a:link {
+    color: #412;
+}
+a:visited {
+    color: #b38;
+}
+a:hover {
+    color: #e5d;
+}
+a:focus {
+    color: 1px #611;
+}
+a:active {
+    color: #c3c;
+}
