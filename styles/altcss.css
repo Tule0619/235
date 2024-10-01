@@ -18,6 +18,7 @@ p {
     border: .25em solid #633;
     background-color: #a79;
     color: #412;
+    max-width: 60em;
 }
 div {
     padding: .5em;
