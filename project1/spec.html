@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2rem;
+            background-color: white;
+        }
+        p{
+            align-self: baseline;
+            width:auto;
+            padding: 0px;
+            margin: 0px;
+        }
+        h1{
+            font-size: 8rem;
+        }
+        strong{
+            font-weight: bold;
+            padding: 0px;
+            margin: 0px;
+        }
+        .icon{
+            max-height: 10rem;
+            scale: 100%;
+        }
+        .pink-background{
+            background-color: pink;
+        }
+        .blue-background{
+            background-color: cornflowerblue;
+            color: aliceblue;
+        }
+        .yellow-background{
+            background-color: cornsilk;
+        }
+        .lightblue-background{
+            background-color: lightskyblue;
+        }
+        .white-background{
+            background-color: aliceblue;
+        }
+        .text-block{
+            max-height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            overflow: hidden;
+        }
+        .top-text{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            overflow: hidden;
+        }
+        .bottom-text{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            overflow: hidden;
+        }
+        .stack{
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-evenly;
+        }
+        .stack *{
+            margin: 1rem;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .row *{
+            margin: 1rem;
+        }
+        #container{
+            display: flex;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            margin-right: 3rem;
+            margin-left: 3rem;
+            flex-direction: column;
+        }
+        #section1{
+            display: grid;
+            grid-template-columns: 2fr 3fr 9fr auto 18fr;
+            grid-template-rows: 1fr 1fr 3fr 4fr 2fr 3fr auto;
+        }
+        #logo{
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            width: 5rem;
+            height: 5rem;
+            z-index: 1;
+        }
+        #banner{
+            grid-column: 1 / span 5;
+            grid-row: 2 / span 4;
+            width: 100%;
+            height: auto;
+        }
+        #mission-statement{
+            width: 30rem;
+            height: 30rem;
+            grid-column: 2 / span 2;
+            grid-row: 4 / span 3;
+            background-color: rgba(255, 176, 176, 0.5);
+            z-index: 1;
+        }
+        #preface{
+            height: 12rem;
+            min-width: 25rem;
+            grid-column: 5;
+            grid-row: 5 / span 3;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            z-index: 1;
+            background-color: white;
+        }
+        #section2{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: stretch;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        #section2 *{
+            margin: 1rem;
+        }
+        #feature3{
+            display: grid;
+            grid-column: 2fr 1fr;
+            grid-row: 3fr 1fr;
+        }
+        #feature3-text{
+            grid-column: 1 / span 2;
+            grid-row: 2;
+            z-index: 1;
+        }
+        #feature3-icon{
+            grid-column: 2;
+            grid-row: 1 / span 2;
+        }
+        #feature4{
+            width: 20rem;
+        }
+        #feature4-icon{
+            max-width: 20rem;
+            scale: 100%;
+        }
+        #bottom-breaker{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+        }
+        #footer{
+            font-size: 1rem;
+            text-align: right;
+        }
+        #navbar{
+            position: fixed;
+            top: 0px;
+            z-index: 2;
+        }
+        .navbar-bar{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: stretch;
+        }
+        li{
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        .bar-item{
+            background-color: cornflowerblue;
+            color: aliceblue;
+        }
+        .bar-item:visited{
+            background-color: lightskyblue;
+        }
+        .bar-item:hover{
+            background-color: rgb(0, 75, 150);
+        }
+        .bar-item:active{
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="blue-background">
+        <ul class="navbar-bar">
+            <li>
+                <a href="#section1" class="bar-item">Home</a>
+            </li>
+            <li>
+                <a href="#section2" class="bar-item">Body1</a>
+            </li>
+            <li>
+                <a href="#bottom-breaker" class="bar-item">Body2</a>
+            </li>
+            <li>
+                <a href="#footer" class="bar-item">Footer</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="container">
+        <section id="section1">
+            <img id="logo" src="media/logo.png" alt="Logo Image">
+            <div id="mission-statement" class="pink-background">
+                <div class="text-block">
+                    <h1>Lorem<br>Ipsum<br>Dolor</h1>
+                </div>
+            </div>
+            <img id="banner" src="media/person-taking-photo-banner.webp" alt="Banner Image">
+            <figure id="preface">
+                <img class="icon" src="media/Cat.webp" alt="Preface Image">
+                <div class="text-block">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam, sequi, dicta itaque sunt assumenda accusantium provident excepturi fugit quae repudiandae sed?</p>
+                </div>
+            </figure>
+        </section>
+        <section id="section2">
+            <figure id="feature1" class="white-background row">
+                <img class="icon" src="media/umbrella.webp" alt="Feature 1 Image">
+                <div class="text-block">
+                    <p><strong>Lorem ipsum</strong><br>Dolor sit amet consectetur adipisicing<br>Elit eos vel minima sequi</p>
+                </div>
+            </figure>
+            <figure id="feature2" class="blue-background">
+                <div class="text-block">
+                    <p><strong>Lorem ipsum</strong><br>dolor sit <strong>amet</strong> consectetur adipisicing</p>
+                </div>
+            </figure>
+            <figure id="feature3" class="white-background">
+                <div id="feature3-text" class="bottom-text">
+                    <p><strong>Lorem ipsum dolor</strong><br>Sit amet consectetur adipisicing</p>
+                </div>
+                <img class="icon" id="feature3-icon" src="media/plane.jpg" alt="Feature 3 Image">
+            </figure>
+            <figure id="feature4" class="pink-background stack">
+                <div class="text-block">
+                    <p><strong>Lorem ipsum dolor</strong><br>Sit amet consectetur</p>
+                </div>
+                <img id="feature4-icon" src="media/guy-on-laptop.webp" alt="Feature 4 Image">
+            </figure>
+            <figure id="feature5" class="lightblue-background">
+                <div class="top-text">
+                    <p><strong>Lorem ipsum dolor sit</strong><br>Amet<br>Consectetur<br>Adipisicing elit</p>
+                </div>
+            </figure>
+            <div class="feature stack">
+                <figure id="feature6" class="row">
+                    <div class="blue-background text-block">
+                        <p><strong>Lorem ipsum</strong><br>dolor si<br><strong>amet</strong> consectetur adipisicing elit</p>
+                    </div>
+                    <img class="icon" src="media/Cat.webp" alt="Feature 6 Image">
+                </figure>
+                <figure id="feature7" class="pink-background row">
+                    <img class="icon" src="media/grad.png" alt="Feature 7 Image">
+                    <div class="text-block">
+                        <p><strong>Lorem ipsum</strong><br>Dolor sit <strong>amet</strong> consectetur adipisicing elit</p>
+                    </div>
+                </figure>
+            </div>
+        </section>
+        <section id="bottom-breaker">
+            <figure id="feature8" class="white-background stack">
+                <img class="icon" src="media/banner.png" alt="Feature 8 Image">
+                <div class="text-block">
+                    <p>Lorem <strong>ipsum</strong> dolor</p>
+                </div>
+            </figure>
+            <div class="stack">
+                <div id="feature9" class="blue-background text-block">
+                    <p>Lorem ipsum dolor sit amet<br><strong>consectetur adipisicing elit</strong></p>
+                </div>
+                <div id="feature10" class="pink-background text-block">
+                    <p>Lorem<br><strong>ipsum dolor</strong></p>
+                </div>
+            </div>
+            <figure id="feature11" class="feature row">
+                <img class="yellow-background right-aligned icon" src="media/face.webp" alt="Feature 11 Image">
+                <div class="white-background text-block">
+                    <p><strong>Lorem,</strong> Ipsum, Dolor, Sit Amet</p>
+                </div>
+            </figure>
+        </section>
+        <section id="footer">
+            <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit</strong></p>
+        </section> 
+    </div>
+</body>
+</html>
