@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-image: url(images/Screenshot\ 2024-09-21\ 235133.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height:100%;
+        }
+        h1
+        {
+            text-align: center;
+            font-size: 6em;
+            color: aliceblue;
+            font-family: "EB Garamond", serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+        }
+        div
+        {
+            margin: 6em;
+            font-size: 2em;
+            color: aliceblue;
+            font-family: "EB Garamond", serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+        }
+        #button
+        {
+            background-image: url(images/button-unpressed.png);
+            background-size: contain;
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+        #button:hover
+        {
+            content: url(images/button-hover.png);
+        }
+        #button:active
+        {
+            content: url(images/button-pressed.png);
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Tyler Burns</h1>
+    <div>
+        <p id="dynamicP">random phrases</p>
+        <img src="images/button-unpressed.png" alt="Button" id="button">
+    </div>
+    <script>
+        const phrases = ["Look! Listen!", "Hey it's me, Tulip!", "Howdy, I'm Flowey!", "Welcome to square zero.", "Take me to the stars with you...", "I am really tired."];
+        const dynamicText = document.getElementById("dynamicP");
+        const button = document.getElementById("button");
+        const eventListener = "click";
+        function displayQuote()
+        {
+            dynamicText.innerHTML = phrases[Math.floor(Math.random()*phrases.length)];
+            console.log('change')
+        }
+        displayQuote();
+
+        button.addEventListener(eventListener, displayQuote);
+    </script>
+</body>
+</html>
